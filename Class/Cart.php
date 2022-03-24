@@ -10,4 +10,16 @@ class Cart
         $this->quantity=$quantity;
         $this->totalprice=$totalprice;
     }
+    public function gettotalprice():float{
+        return $this->totalprice;
+    }
+    public function settotalprice($totalprice):void
+    {
+       $this->totalprice=$totalprice;  
+    }
+    public function discount(float $discount):float
+    {
+       return ($this->totalprice=$this->totalprice-($this->totalprice*($discount/100)));  
+    }
+    
 }

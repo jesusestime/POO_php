@@ -1,7 +1,14 @@
 <?php
 
 
-require_once ('Class/Cart.php');
 
-$cart=new Cart(20,100);
-var_dump($cart->quantity);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
+require ('vendor/autoload.php');
+
+
+
+
